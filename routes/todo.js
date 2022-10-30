@@ -1,10 +1,8 @@
 const express = require('express');
-// eslint-disable-next-line no-unused-vars
 const mongoose = require('mongoose');
 const Todos = require('../models/todos');
 const jwt = require('jsonwebtoken');
 
-// eslint-disable-next-line new-cap
 const router = express.Router();
 
 router.post('/add', async (req, res) => {
