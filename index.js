@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 if (process.env.NODE_ENV != 'production') {
   require('dotenv').config();
 }
@@ -28,6 +27,7 @@ app.use('/api/user', user);
 app.use('/api/todo', todo);
 
 const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
   console.log(`server up in port ${port}`);
 });
